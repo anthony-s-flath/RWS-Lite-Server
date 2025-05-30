@@ -18,7 +18,7 @@ class Graph:
 
 
 def main():
-    print('Starting graph.py, but why')
+    print('Starting graph.py, but why not?')
 
 if __name__=='__main__':
     main()
