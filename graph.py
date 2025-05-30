@@ -2,8 +2,6 @@ import pandas as pd
 import plotly.express as px
 import plotly.io as pio
 
-#DIYgm-Server-Version/data/RWSlite-data-collection/RyanRWSlite-rws_lite_data1698869545.1947374.csv
-
 
 class Graph:
     def __init__(self, query):
