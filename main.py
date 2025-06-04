@@ -2,7 +2,9 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
 from graph import Graph
 
+# REST API format
 class Server(BaseHTTPRequestHandler):
+    # 
     def do_GET(self):
         url = urlparse(self.path)
         print(url.query)
@@ -42,7 +44,8 @@ class Server(BaseHTTPRequestHandler):
             self.wfile.write(res.read())
 
         
-
+# type localhost:8080 in order to look at the site
+# MIGHT have some difficulties with some network securities but probs not
 def main():
     host = 'localhost'
     port = 8080
